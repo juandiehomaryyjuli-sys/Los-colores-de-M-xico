@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cuándo Viajar | Los colores de México</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <header class="barra-principal">
+        <div class="logo">
+            <h1>Temporadas y Eventos</h1>
+        </div>
+        <nav class="menu-navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="sabores.html">Sabores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-interactiva"> 
+            <h3> ¡Planifica tu aventura mexicana! </h3>
+            <div class="formulario-plan">
+                <input type="text" id="nombreUsuario" placeholder="Tu nombre">
+
+                <select id="seleccionDestino">
+                    <option value="" disabled selected> ¿A qué destino quieres ir?</option>
+                    <option value="Xochimilco">Xochimilco (CDMX)</option>
+                    <option value="Taxco">Taxco (Guerrero)</option>
+                    <option value="Teotihuacán">Teotihuacán (Estado de México)</option>
+                    <option value="Coyoacan">Coyoacan (CDMX)</option>
+                    <option value="Basílica (CDMX)">Basílica de Guadalupe</option>
+                </select>
+                <button id="btnPlanear">Generar mi itinerario</button>
+            </div>
+        </section>
+
+        <div id="modalItinerario" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="contenidoDinamico"></div>
+            </div>
+        </div>
+    
+
+        <section class="hero-calendario">
+            <h2>¿Estás listo para tu aventura? Calendario de Experiencias 2026</h2>
+            <p>México siempre tiene algo que ofrecer, pero aquí te decimos cuándo están sus colores más vivos.</p>
+            <p>Explora mes a mes lo que México tiene preparado para ti.</p>     
+        </section>
+
+        <div class="contenedor-grid">
+            <article class="card-mes enero">
+                <div class="header-mes">
+                    <h3>Enero</h3>
+                    <span class="clima">☁️ 15°C - 23°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Seco y Fresco</p>
+                    <ul class="lista-eventos">
+                        <li><strong>06 Ene:</strong> Día de Reyes</li>
+                        <li><strong>17 Ene:</strong> San Antonio Abad</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes febrero">
+                <div class="header-mes">
+                    <h3>Febrero</h3>
+                    <span class="clima">🌞 16°C - 25°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Muy Soleado</p>
+                    <ul class="lista-eventos">
+                        <li><strong>02 Feb:</strong> Día de la Candelaria</li>
+                        <li><strong>11-17 Feb:</strong> Carnaval de Veracruz</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes marzo">
+                <div class="header-mes">
+                    <h3>Marzo</h3>
+                    <span class="clima">🌞 18°C - 28°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Cálido</p>
+                    <ul class="lista-eventos">
+                        <li><strong>21 Mar:</strong> Equinoccio de Primavera</li>
+                        <li><strong>26-30 Mar:</strong> Cumbre Tajin</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes abril">
+                <div class="header-mes">
+                    <h3>Abril</h3>
+                    <span class="clima">🌡️ 20°C - 30°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Caluroso y Seco</p>
+                    <ul class="lista-eventos">
+                        <li><strong>05-12 Abr:</strong> Semana Santa, Procesiones en Taxco.</li>
+                        <li><strong>25 Abr:</strong> Feria de San Marcos de Aguascalientes.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes mayo">
+                <div class="header-mes">
+                    <h3>Mayo</h3>
+                    <span class="clima">🌡️ 22°C - 32°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Calor Intenso</p>
+                    <ul class="lista-eventos">
+                        <li><strong>05 May:</strong> Desfiles de la batalla de puebla.</li>
+                        <li><strong>20 May:</strong> Festival de las Tres Culturas.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes junio">
+                <div class="header-mes">
+                    <h3>Junio</h3>
+                    <span class="clima">🌦️ 20°C - 28°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Inicio de Lluvias</p>
+                    <ul class="lista-eventos">
+                        <li><strong>01 Jun:</strong> Día de la Marina.</li>
+                        <li><strong>24 Jun:</strong> Fiesta de San Juan Bautista.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes julio">
+                <div class="header-mes">
+                    <h3>Julio</h3>
+                    <span class="clima">🌧️ 19°C - 26°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Lluvioso</p>
+                    <ul class="lista-eventos">
+                        <li><strong>20-27 Jul:</strong> La Guelaguetza en Oaxaca: La fiesta cultural más grande.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes agosto">
+                <div class="header-mes">
+                    <h3>Agosto</h3>
+                    <span class="clima">🌧️ 19°C - 26°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Lluvioso y Humendo</p>
+                    <ul class="lista-eventos">
+                        <li><strong>01-15 Ago:</strong> Fiesta de la Asunción.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes septiembre destacado">
+                <div class="header-mes">
+                    <h3>Septiembre</h3>
+                    <span class="clima">🌧️ 13°C - 24°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Lluvioso</p>
+                    <ul class="lista-eventos">
+                        <li><strong>15 Sep:</strong> El grito de Independencia.</li>
+                        <li><strong>16 Sep:</strong> Gran Desfile Militar Nacional.</li>
+                        <li><strong>29 Sep:</strong> Día de San Miguel.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes octubre destacado">
+                <div class="header-mes">
+                    <h3>Octubre</h3>
+                    <span class="clima">☂️☁️ 16°C - 24°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Fresco</p>
+                    <ul class="lista-eventos">
+                        <li><strong>13-29 Oct:</strong> Festival Cervantino (Guanajuato).</li>
+                        <li><strong>31 Oct:</strong> Inicio de desfiles de Alebrijes y Ofrendas.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes noviembre destacado">
+                <div class="header-mes">
+                    <h3>Noviembre</h3>
+                    <span class="clima">☁️ 14°C - 22°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Fresco y Seco</p>
+                    <ul class="lista-eventos">
+                        <li><strong>01-02 Nov:</strong> Día de Muertos.</li>
+                        <li><strong>20 Nov:</strong> Aniversario de la Revolución.</li>
+                        <li><strong>28 Nov:</strong> Apertura de la Feria de la Plata en Taxco.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card-mes diciembre">
+                <div class="header-mes">
+                    <h3>Diciembre</h3>
+                    <span class="clima">🌬️ 12°C - 21°C</span>
+                </div>
+                <div class="cuerpo-mes">
+                    <p class="tip-clima">Frío</p>
+                    <ul class="lista-eventos">
+                        <li><strong>12 Dic:</strong> Día de la Virgen de Guadalupe.</li>
+                        <li><strong>16-24 Dic:</strong> Las Posadas (Tradición pura).</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 UNAD - Laura Juliana Rodriguez Suarez - Grupo _28</p>
+    </footer>
+</body>
+</html>
