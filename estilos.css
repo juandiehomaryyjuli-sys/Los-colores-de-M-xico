@@ -83,7 +83,7 @@ body,html {
 
 .hero-section {
     height: 100vh;
-    background: url('../images/inicio/BARCAS.jpg') center center;
+    background: url('../BARCAS.jpg') center center;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -158,7 +158,7 @@ footer {
 .tarjeta.mujeres-central {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    background: url('../images/inicio/mujeres.jpg');
+    background: url('../mujeres.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
@@ -168,7 +168,7 @@ footer {
 .tarjeta.campana-derecha {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    background: url('../images/inicio/campana.jpg');
+    background: url('../campana.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-start;
