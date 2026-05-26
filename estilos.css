@@ -158,7 +158,7 @@ footer {
 .tarjeta.mujeres-central {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    background: url('mujeres.jpg');
+    background: url('../images/inicio/mujeres.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
