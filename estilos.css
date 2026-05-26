@@ -83,7 +83,7 @@ body,html {
 
 .hero-section {
     height: 100vh;
-    background: url('../images/inicio/BARCAS.jpg') center center;
+    background: url('/BARCAS.jpg') center center;
     background-size: cover;
     background-position: center;
     display: flex;
